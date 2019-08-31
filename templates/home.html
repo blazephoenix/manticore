@@ -2,7 +2,7 @@
 {% block body %}
     {% for post in posts %}
     <p>
-        <h2><a href="posts/{{ post.slug }}/">{{post.title}}</a> <small>{{post.date}}</small></h2>
+        <h2><a href="posts/{{ post.slug }}.html">{{post.title}}</a> <small>{{post.date}}</small></h2>
         {{post.summary}}
     </p>
     {% endfor %}
