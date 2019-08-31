@@ -1,4 +1,8 @@
 {% extends 'layout.html' %}
+{% block title %}
+    MyBlog
+    <!--TODO: A WAY TO GET BLOG NAME IN DOCUMENT TITLE-->
+{% endblock title %}
 {% block body %}
     {% for post in posts %}
     <p>
