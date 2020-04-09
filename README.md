@@ -8,9 +8,9 @@ A lot of work remains to be done but the basic functionality is all there.
 ### To-do:
 * Implement custom category, tag functionality.
 * A CLI to automate the process
+* Functionality for other static site templates (resume, portfolio, landing page, etc.)
 
 ### Steps to get started: 
 
-- Create empty output folder
 - Add posts in content
 - Run build.py
