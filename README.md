@@ -1,5 +1,5 @@
 # Manticore
-=======
+
 Manticore is a static site generator using Python.
 
 It uses Markdown2 and the jinja2 templating engine to render static pages as output.
