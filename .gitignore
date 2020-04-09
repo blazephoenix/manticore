@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.vscode/
 
 # C extensions
 *.so
@@ -18,6 +19,7 @@ lib/
 lib64/
 parts/
 sdist/
+virtualenv/
 var/
 wheels/
 pip-wheel-metadata/
