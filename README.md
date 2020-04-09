@@ -3,6 +3,5 @@
 Steps to get started: 
 
 - Create empty output folder
-- Add posts in contend
-- Run parse.py
-- Run render.py
+- Add posts in content
+- Run build.py
