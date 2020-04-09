@@ -2,9 +2,10 @@ import os
 from jinja2 import Environment, PackageLoader
 from parse import Parser
 
-def render(posts):
+def Render(posts):
 
     POSTS = posts
+    ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
     env = Environment(loader=PackageLoader('render', 'templates'))
     home_temp = env.get_template('home.html')
@@ -13,6 +14,8 @@ def render(posts):
     posts_mdata = [POSTS[post].metadata for post in POSTS]
     # tags = [post['tags'] for post in posts_mdata]
     home_html = home_temp.render(posts=posts_mdata)
+
+    os.makedirs(os.path.join(ROOT_DIR, 'output'))
 
     with open('output/home.html', 'w') as file:
         file.write(home_html)
