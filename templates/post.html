@@ -1,6 +1,10 @@
 {% extends 'layout.html' %}
+{% block title %}
+    {{post.blog}}
+{% endblock title %}
 {% block body %}
 
+<h1><a href="../home.html">{{post.blog}}</a></h1>
 <h1>{{post.title}}</h1>
 <small>{{post.date}}</small>
 

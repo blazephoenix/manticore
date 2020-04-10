@@ -1,9 +1,9 @@
 {% extends 'layout.html' %}
 {% block title %}
-    MyBlog
-    <!--TODO: A WAY TO GET BLOG NAME IN DOCUMENT TITLE-->
+    {{posts[0].blog}}
 {% endblock title %}
 {% block body %}
+    <h1>{{posts[0].blog}}</h1>
     {% for post in posts %}
     <p>
         <h2><a href="posts/{{ post.slug }}.html">{{post.title}}</a> <small>{{post.date}}</small></h2>
