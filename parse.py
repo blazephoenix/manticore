@@ -2,6 +2,10 @@ import os
 from datetime import datetime
 from markdown2 import markdown
 
+'''
+Parser will parse arguments according to selected option.
+'''
+
 def Parser():
 
     POSTS = {}

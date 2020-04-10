@@ -9,8 +9,8 @@ def Render(posts):
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
     env = Environment(loader=PackageLoader('render', 'templates'))
-    home_temp = env.get_template('home.html')
-    post_temp = env.get_template('post.html')
+    home_temp = env.get_template('default/home.html')
+    post_temp = env.get_template('default/post.html')
 
     posts_mdata = [POSTS[post].metadata for post in POSTS]
     # tags = [post['tags'] for post in posts_mdata]
