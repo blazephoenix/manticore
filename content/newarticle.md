@@ -1,3 +1,4 @@
+blog: Blaze codes
 title: TARDIS manual
 date: 2 Sep 2019
 summary: Do not leave the brakes on, you always leave the brakes on and its not funny - River Song

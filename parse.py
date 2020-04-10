@@ -18,6 +18,4 @@ def Parser():
         reverse=True)
     }
 
-    print(POSTS);
-
     return POSTS
