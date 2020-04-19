@@ -1,0 +1,14 @@
+{% extends './layout.html' %}
+{% block title %}
+    Tanmay Naik - Fullstack web developer
+{% endblock title %}
+{% block body %}
+
+    <h1>{{ details.name }}</h1>
+    <small>{{ details.address }}</small>
+
+    <p>{{ details.phone }} | {{ details.email }}</p>
+
+    <hr>
+    {{ details.content }}
+{% endblock body %}
