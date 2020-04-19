@@ -1,0 +1,14 @@
+{% extends './layout.html' %}
+{% block title %}
+    {{ details.name }}
+{% endblock title %}
+{% block body %}
+
+    <h1>{{ details.name }}</h1>
+    <small>{{ details.address }}</small>
+
+    <p>{{ details.phone }} | {{ details.email }}</p>
+
+    <hr>
+    {{ details.content }}
+{% endblock body %}

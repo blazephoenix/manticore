@@ -6,13 +6,12 @@ from markdown2 import markdown
 Parser will parse arguments according to selected option.
 '''
 
-def Parser():
+def Post_parser():
 
     POSTS = {}
 
-    for md_post in os.listdir('content'):
-        md_post_path = os.path.join('content', md_post)
-        
+    for md_post in os.listdir('content/default'):
+        md_post_path = os.path.join('content', 'default', md_post)        
         with open(md_post_path, 'r') as f:
             POSTS[md_post] = markdown(f.read(), extras=['metadata'])
 
@@ -23,3 +22,14 @@ def Parser():
     }
 
     return POSTS
+
+def Resume_parser():
+
+    DETAILS = {}
+
+    md_file_path = 'content/resume/resume.md'
+
+    with open(md_file_path, 'r') as f:
+        DETAILS = markdown(f.read(), extras=['metadata'])
+    
+    return DETAILS
