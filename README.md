@@ -6,9 +6,9 @@ It uses Markdown2 and the jinja2 templating engine to render static pages as out
 A lot of work remains to be done but the basic functionality is all there.
 
 ### To-do:
-* Custom category and tags.
-* CLI application.
-* Other static site templates (resume, portfolio, landing page, etc.).
+[] Custom category and tags.
+[x] CLI application.
+[x] Other static site templates (resume, portfolio, landing page, etc.).
 
 ### Steps to get started: 
 
