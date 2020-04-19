@@ -1,10 +1,11 @@
 {% extends './layout.html' %}
 {% block title %}
-    {{ details.name }}
+    {{ details.name }} | {{ details.designation }}
 {% endblock title %}
 {% block body %}
 
     <h1>{{ details.name }}</h1>
+    <h3>{{ details.designation }}</h3>
     <small>{{ details.address }}</small>
 
     <p>{{ details.phone }} | {{ details.email }}</p>

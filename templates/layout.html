@@ -10,15 +10,32 @@
 </head>
 <body>
     <style>
+
+        body{
+            overflow-x: hidden;
+        }
+
         #root{
             width: 900px;
             margin: 0 auto;
+            overflow: auto;
         }
+        footer{
+            width: 100vw;
+            background: rgb(235, 235, 235);
+            text-align: center;
+            padding: 2.5rem 0;
+            height: 30px;
+            margin-top: 195px;
+        }
+
     </style>
+
     <div id="root">
     {% block body %}
     
     {% endblock body %}
     </div>
+    <footer>Made with &#9749; and <a href="https://github.com/blazephoenix/manticore">Manticore</footer>
 </body>
 </html>

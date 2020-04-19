@@ -4,6 +4,13 @@ from jinja2 import Environment, PackageLoader
 from parse import Resume_parser, Post_parser
 
 class Render:
+
+    """
+    
+    Renders the HTML page according to the arguments provided by build.py.
+
+    """
+
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
     env = Environment(loader=PackageLoader('render', 'templates'))
 
@@ -18,7 +25,7 @@ class Render:
 
             if Path(os.path.join(self.ROOT_DIR, 'output', 'home.html')).is_file():
                 with open('output/home.html', 'w') as file:
-                    file.write(self.env.get_template('home.html').render(posts=posts_mdata))
+                    file.write(self.env.get_template('default/home.html').render(posts=posts_mdata))
             else:
                 os.makedirs(os.path.join(self.ROOT_DIR, 'output'))
 
@@ -42,7 +49,7 @@ class Render:
 
                 if Path(os.path.join(self.ROOT_DIR, post_file_path)).is_file():
                     with open(post_file_path, 'w') as file:
-                        file.write(self.env.get_template('post.html').render(post=post_data))
+                        file.write(self.env.get_template('default/post.html').render(post=post_data))
                 else:
                     os.makedirs(os.path.dirname(post_file_path), exist_ok=True)
                     
@@ -56,6 +63,7 @@ class Render:
 
             resume_data = {
                 'name': details.metadata['name'],
+                'designation': details.metadata['designation'],
                 'address': details.metadata['address'],
                 'phone': details.metadata['phone'],
                 'email':details.metadata['email'],
