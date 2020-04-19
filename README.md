@@ -1,6 +1,6 @@
 # Manticore
 
-A static site generator in Python.
+A simple, minimal static site generator in Python.
 
 ## Getting Started
 
@@ -45,7 +45,10 @@ Deployment solutions are currently being worked on. Deployment with Netlify CLI 
 ## Built With
 
 * [Markdown2](https://github.com/trentm/python-markdown2) - A fast and complete Python implementation of Markdown.
-* [Jinja2](https://jinja.palletsprojects.com/en/2.11.x/) - A modern and designer-friendly templating language for Python
+* [Jinja2](https://jinja.palletsprojects.com/en/2.11.x/) - A modern and designer-friendly templating language for Python.
+* [Click](https://click.palletsprojects.com/en/7.x/) - A Python package for creating beautiful command line interfaces.
+* [Skeleton CSS](https://github.com/dhg/Skeleton) - A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development 
+* [Normalize CSS](https://necolas.github.io/normalize.css/) - Normalize.css makes browsers render all elements more consistently and in line with modern standards
 
 ## Contributing
 
@@ -64,6 +67,13 @@ See also the list of [contributors](https://github.com/your/project/contributors
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
+
+## Acknowledgement
+
+- Normalize CSS - [Necolas](https://github.com/necolas)
+- Skeleton CSS - [Dave Gamache](https://github.com/dhg)
+- Jinja2 and Click - [Pallets Projects](https://github.com/pallets)
+- Markdown2 - [Trent Mick](https://github.com/trentm)
 
 ### Upcoming feature releases (probably):
 - [ ] Custom category/tags.
