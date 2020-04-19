@@ -4,6 +4,13 @@ from jinja2 import Environment, PackageLoader
 from parse import Resume_parser, Post_parser
 
 class Render:
+
+    """
+    
+    Renders the HTML page according to the arguments provided by build.py.
+
+    """
+
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
     env = Environment(loader=PackageLoader('render', 'templates'))
 
@@ -56,6 +63,7 @@ class Render:
 
             resume_data = {
                 'name': details.metadata['name'],
+                'designation': details.metadata['designation'],
                 'address': details.metadata['address'],
                 'phone': details.metadata['phone'],
                 'email':details.metadata['email'],
