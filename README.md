@@ -14,4 +14,13 @@ A lot of work remains to be done but the basic functionality is all there.
 
 - Install `requirements.txt`
 - Add posts in markdown format in the content folder.
-- Run `python build.py`
+- Check commands with `python build.py --help`
+
+```
+Usage: build.py [OPTIONS]
+
+Options:
+  -d, --default TEXT  Generate the default blog template
+  -r, --resume TEXT   Generate a resume template
+  --help              Show this message and exit.
+```
