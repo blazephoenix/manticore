@@ -1,4 +1,4 @@
 ﻿click==7.1.1
 Jinja2==2.11.3
-markdown2==2.3.8
+markdown2==2.4.0
 MarkupSafe==1.1.1
